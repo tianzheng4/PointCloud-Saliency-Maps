@@ -25,10 +25,10 @@ parser.add_argument('--model_path', default='log/model.ckpt', help='model checkp
 parser.add_argument('--dump_dir', default='dump', help='dump folder path [dump]')
 parser.add_argument('--visu', action='store_true', help='Whether to dump image for error case [default: False]')
 parser.add_argument('--num_votes', type=int, default=1, help='Aggregate classification scores from multiple rotations [default: 1]')
-parser.add_argument('--num_drop', type=int, default=10, help='num of points to drop each step')
-parser.add_argument('--num_steps', type=int, default=10, help='num of steps to drop each step')
+parser.add_argument('--num_drop', type=int, default=5, help='num of points to drop each step')
+parser.add_argument('--num_steps', type=int, default=20, help='num of steps to drop each step')
 parser.add_argument('--drop_neg', action='store_true',help='drop negative points')
-parser.add_argument('--power', type=int, default=6, help='x: -dL/dr*r^x')
+parser.add_argument('--power', type=int, default=1, help='x: -dL/dr*r^x')
 FLAGS = parser.parse_args()
 
 
