@@ -1,5 +1,5 @@
 
-For paper "PointCloud Saliency Maps"
+For paper "PointCloud Saliency Maps" (To appear in ICCV 2019 oral presentation, 187 out of 4303)
 
 In the folder "point-master", we provide the code for testing our method on PointNet. The code is written based on the code from
 (PointNet https://github.com/charlesq34/pointnet)
